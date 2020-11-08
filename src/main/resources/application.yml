@@ -1,0 +1,16 @@
+
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/account
+    username: nespot2
+    password: zaq1234!
+    hikari:
+      pool-name: hikari-cp
+      maximum-pool-size: 10
+      minimum-idle: 2
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        default_batch_fetch_size: 1000
+        format_sql: true
