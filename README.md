@@ -14,3 +14,4 @@
 
 - [spring batch document](https://docs.spring.io/spring-batch/docs/4.3.x/reference/html/index.html)
 - [The Definitive Guide to Spring Batch](https://www.apress.com/gp/book/9781484237236)
+- [10. Spring Batch 가이드 - Spring Batch 테스트 코드](https://jojoldu.tistory.com/455)
