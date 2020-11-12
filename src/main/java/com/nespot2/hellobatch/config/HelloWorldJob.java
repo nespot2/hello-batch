@@ -13,27 +13,29 @@ import org.springframework.context.annotation.Configuration;
 /**
  * @author nespot2
  * @version 0.0.1
- * @since 2020/11/08
+ * @since 2020/11/12
  **/
 @Configuration
 @RequiredArgsConstructor
-@ConditionalOnProperty(name = "job.name", havingValue = "hello_world")
-public class HelloWorldConfiguration {
+@ConditionalOnProperty(name = "job.name", havingValue = "hello_world_job")
+public class HelloWorldJob {
 
     private final JobBuilderFactory jobBuilderFactory;
 
     private final StepBuilderFactory stepBuilderFactory;
 
     @Bean
-    public Step step() {
+    public Job job() {
+        return this.jobBuilderFactory.get("basicJob").start(step1()).build();
+    }
+
+    @Bean
+    public Step step1() {
         return this.stepBuilderFactory.get("step1").tasklet((contribution, chunkContext) -> {
-            System.out.println("Hello, World!");
+            System.out.println("Hello, world!");
             return RepeatStatus.FINISHED;
         }).build();
     }
 
-    @Bean
-    public Job job() {
-        return this.jobBuilderFactory.get("job").start(step()).build();
-    }
+
 }
