@@ -22,13 +22,13 @@ import static org.junit.jupiter.api.Assertions.*;
  **/
 @SpringBatchTest
 @SpringBootTest
-@TestPropertySource(properties = "job.name=hello_world_job3")
+@TestPropertySource(properties = {"job.name=hello_world_job4", "spring.batch.job.enabled=false"})
 class HelloWorldJob3Test {
     @Autowired
     private JobLauncherTestUtils jobLauncherTestUtils;
 
     @Test
-    public void test() throws Exception {
+    void test() throws Exception {
         final OffsetDateTime now = OffsetDateTime.now();
         JobParameters jobParameters = new JobParametersBuilder()
                 .addString("orderDate", now.toString())
