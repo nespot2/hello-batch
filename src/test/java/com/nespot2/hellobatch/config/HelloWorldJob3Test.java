@@ -22,7 +22,7 @@ import static org.junit.jupiter.api.Assertions.*;
  **/
 @SpringBatchTest
 @SpringBootTest
-@TestPropertySource(properties = {"job.name=hello_world_job4", "spring.batch.job.enabled=false"})
+@TestPropertySource(properties = {"job.name=hello_world_job3", "spring.batch.job.enabled=false"})
 class HelloWorldJob3Test {
     @Autowired
     private JobLauncherTestUtils jobLauncherTestUtils;

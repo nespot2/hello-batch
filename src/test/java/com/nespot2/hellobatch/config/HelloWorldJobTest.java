@@ -24,7 +24,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
  **/
 @SpringBatchTest
 @SpringBootTest
-@TestPropertySource(properties = {"job.name=hello_world_job4", "spring.batch.job.enabled=false"})
+@TestPropertySource(properties = {"job.name=hello_world_job", "spring.batch.job.enabled=false"})
 class HelloWorldJobTest {
 
     @Autowired
