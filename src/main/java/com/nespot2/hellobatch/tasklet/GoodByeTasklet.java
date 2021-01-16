@@ -30,6 +30,7 @@ public class GoodByeTasklet implements Tasklet {
 
         jobExecutionContext.put("haha", name);
 
+
         log.info(GOOD_BYE, name);
 
         return RepeatStatus.FINISHED;
