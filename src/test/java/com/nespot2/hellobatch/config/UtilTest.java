@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * @version 0.0.1
  * @since 2021/01/17
  **/
-public class UtilTest {
+class UtilTest {
 
     @Test
     void test() {
