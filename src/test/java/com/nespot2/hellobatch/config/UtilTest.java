@@ -2,8 +2,9 @@ package com.nespot2.hellobatch.config;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import java.util.Arrays;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * @author nespot2
@@ -26,5 +27,11 @@ public class UtilTest {
 
         assertNotEquals(25, a);
     }
+
+    @Test
+    void test3(){
+        assertTrue(Arrays.asList().isEmpty());
+    }
+
 
 }
