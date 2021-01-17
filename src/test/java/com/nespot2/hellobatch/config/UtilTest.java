@@ -3,6 +3,7 @@ package com.nespot2.hellobatch.config;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 /**
  * @author nespot2
@@ -17,6 +18,13 @@ public class UtilTest {
 
         assertEquals(10, a);
 
+    }
+
+    @Test
+    void test2() {
+        int a = 20;
+
+        assertNotEquals(25, a);
     }
 
 }
