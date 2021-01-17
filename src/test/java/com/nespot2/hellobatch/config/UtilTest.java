@@ -33,5 +33,10 @@ public class UtilTest {
         assertTrue(Arrays.asList().isEmpty());
     }
 
+    @Test
+    void test4(){
+        assertFalse(Arrays.asList(1,2,3,4).isEmpty());
+    }
+
 
 }
